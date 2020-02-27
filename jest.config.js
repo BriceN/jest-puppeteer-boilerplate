@@ -100,7 +100,7 @@ module.exports = {
   // reporters: undefined,
   "reporters": [
     "default",
-    ["./node_modules/jest-html-reporter", {
+    ["jest-html-reporters", {
       "pageTitle": "Test Report"
     }]
   ]

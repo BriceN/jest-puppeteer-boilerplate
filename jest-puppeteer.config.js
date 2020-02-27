@@ -2,8 +2,10 @@ module.exports = {
     launch: {
         headless: false,
         slowMo: 0,
-        viewportWidth: 1920,
-        viewportHeight: 1080,
+        defaultViewport: {
+            width: 1920,
+            height: 1080
+        },
         timeout: 10000,
         args: ["--proxy-server='direct://'", '--proxy-bypass-list=*', '--start-maximized']
     },

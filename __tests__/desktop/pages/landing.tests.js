@@ -1,9 +1,13 @@
 import LandingPage from "../../../pages/landing/LandingPage";
+import {
+    JEST_TIMEOUT
+} from "../../../config";
 
-describe('Landing page tests', () => {
+describe('Page:Landing', () => {
     let landingPage;
 
     beforeAll(async () => {
+        jest.setTimeout(JEST_TIMEOUT);
         landingPage = new LandingPage();
     });
 
